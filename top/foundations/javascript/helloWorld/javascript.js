@@ -12,9 +12,29 @@ function myFunction() {
     text = "Canceled"; 
   
   } else if (person == "Admin") {
-    text = "Hello!";
-  
+      const pass = prompt("Password:");
+
+function myFunction2() {
+  if (pass == null || pass == "") {
+    text = "Nope";
+  }
+}
+
   } else {
     text = "I don't know you"; }
   document.getElementById("demo").innerHTML = text;
+
+  if (pass == null || pass == "")  {
+    text = "Incorrect";
   }
+
+}
+
+// function myFunction2() {
+//   if (pass == null || pass == "") {
+//     text = "Incorrect";
+//   }
+//   document.getElementById("demo").innerHTML = text;
+
+// }
+
